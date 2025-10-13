@@ -1,1 +1,111 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333333;
+        background-image: url("../images/daniel-background.jpg");
+        background-color: rgba(255,255,255,0.6);
+        background-blend-mode: lighten;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        line-height: 1.6;
+        margin: 40px;
+    }
 
+    h1 {
+        color: #b22222; /* Tomato red tone */
+        text-align: center;
+    }
+
+    h2, h3 {
+        color: #cc3300;
+    }
+
+    figure {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    figcaption {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    ul, ol {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    hr {
+        margin-top: 40px;
+    }
+
+.rate {
+    color: #b22222;          
+    margin-top: 30px;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #b22222;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 250px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+legend {
+    font-weight: bold;
+    color: #cc3300;
+}
+
+/* --- Conversion Section --- */
+h3 {
+    margin-top: 25px;
+}
+
+input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+/* --- Layout with Flexbox --- */
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;  /* centers layout and adds bottom spacing */
+  padding: 20px;
+}
+
+.wrapper > div {
+  flex: 1 1 45%;             /* each box takes about half the width */
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.6); /* subtle white overlay for readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Optional: center your text headings */
+h1, h2 {
+  text-align: center;
+}
+
+/* Optional: adjust overall content width for a cleaner look */
+body {
+  max-width: 1000px;
+  margin: 40px auto;       /* centers the entire page */
+}
+h3 {
+  border-bottom: 2px solid #cc3300;
+  padding-bottom: 4px;
+  width: fit-content;
+}
